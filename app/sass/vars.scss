@@ -1,0 +1,35 @@
+$ac-color:#fe3e57;
+$df-color:#8d8d8d;
+$title-color:#29282d;
+$bg-color:#f6f6f6;
+
+%Roboto-4 {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+%Roboto-7 {
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+%Oxygen-4 {
+  font-family: Oxygen;
+  font-weight: 400;
+}
+
+%Oxygen-5 {
+  font-family: Oxygen;
+  font-weight: 500;
+}
+
+%btn {
+  background-color: $ac-color;
+  @extend %Roboto-4;
+  padding: 12px 26px;
+
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 7px 20px 0 rgba(255, 17, 48, 0.3);
+
+}
