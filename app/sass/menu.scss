@@ -1,0 +1,28 @@
+@import "vars";
+
+
+
+
+.list-munu {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  text-transform: uppercase;
+
+
+
+  ol li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  li div:nth-child(2) {
+    flex: 1 0;
+    border-bottom: 1px dotted #000;
+    height: 1em;
+    margin: 0 .4em;
+  }
+}

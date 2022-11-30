@@ -1,9 +1,10 @@
-// @import "vars";
 // @import "fonts";
 @import "reset";
 @import "global";
 @import "libs";
+@import "vars";
 @import "item";
+@import "menu";
 
 .header {
 
@@ -116,6 +117,7 @@
   margin: 0 auto;
   margin-bottom: 40px;
   padding-top: 20px;
+
 
   h1 {
     text-transform: uppercase;

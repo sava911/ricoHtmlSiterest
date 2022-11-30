@@ -121,6 +121,17 @@
 
 @media (max-width: 650px) {
 
+  .list-munu {
+    text-align: start;
+    padding-top: 0;
+
+    ol li {
+      font-size: 10px;
+      font-family: "Avenir-Roman";
+    }
+
+  }
+
 
   .categories__items {
 
@@ -172,10 +183,22 @@
   }
 
 
+  .menu__item-mobipone {
+    font-size: 12px;
+
+  }
+
 
   .map {
     iframe {
       height: 300px;
     }
+  }
+}
+
+@media (max-width: 350px) {
+  .logo {
+
+    margin-left: 30px;
   }
 }
