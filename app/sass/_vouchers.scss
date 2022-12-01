@@ -1,0 +1,83 @@
+.banner {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
+
+  &__inner {
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    // margin-bottom: 40px;
+    padding-top: 120px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+}
+
+.vouchers-items {
+  padding-top: 40px;
+
+
+  display: grid;
+  min-height: 840px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  margin-bottom: 40px;
+}
+
+
+.vouchers-item {
+
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  // min-height: 430px;
+  position: relative;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3),
+    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  margin: 0 20px;
+
+
+  &__info-inner {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    background-color: #FDFBF8;
+    // height: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+
+
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__sale {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+}
+
+.team-item {
+  background-position: top center;
+
+}

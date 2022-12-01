@@ -37,6 +37,7 @@ a {
   color: inherit;
 }
 
+
 ul,
 li,
 b {
@@ -46,12 +47,18 @@ b {
   font-weight: normal;
 }
 
-button {
+button,
+select {
   padding: 0;
   cursor: pointer;
   background-color: transparent;
   border: none;
   outline: none;
+  font-family: inherit;
+}
+
+path {
+  fill: currentColor !important;
 }
 
 p {
@@ -60,6 +67,7 @@ p {
 
 input {
   all: unset;
+  box-sizing: border-box;
 }
 
 body {

@@ -1,4 +1,13 @@
+@media (max-width: 1100px) {
+  .vouchers-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
 @media (max-width: 950px) {
+
+
   .container {
     padding: 0 20px;
   }
@@ -11,6 +20,8 @@
 }
 
 @media (max-width: 800px) {
+
+
   .menu {
     display: none;
 
@@ -33,7 +44,6 @@
 
   }
 
-  // sdfasdf
   .header__menu-button__wrapper {
     .checkbox {
       position: absolute;
@@ -120,6 +130,25 @@
 }
 
 @media (max-width: 650px) {
+  .form-resrv__inputs {
+    grid-template-columns: 100%;
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+    margin-bottom: 30px;
+  }
+
+  .form-resrv__selects {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rest__items-btn {
+    flex-direction: column;
+  }
+
+  .rest__btn {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
 
   .list-munu {
     text-align: start;
@@ -127,7 +156,7 @@
 
     ol li {
       font-size: 10px;
-      font-family: "Avenir-Roman";
+      // margin-bottom: 5px;
     }
 
   }
@@ -172,7 +201,10 @@
   }
 
   .top-slider__item img {
-    height: 350px;
+
+    height: 400px;
+    border-radius: 20px;
+
   }
 
 

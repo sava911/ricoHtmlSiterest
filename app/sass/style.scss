@@ -3,8 +3,9 @@
 @import "global";
 @import "libs";
 @import "vars";
-@import "item";
-@import "menu";
+@import "_item";
+@import "_menu";
+@import "_vouchers";
 
 .header {
 
@@ -124,6 +125,12 @@
     margin-bottom: 20px;
   }
 
+  h6,
+  address {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
   p {
     padding-bottom: 20px;
   }
@@ -222,6 +229,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    text-transform: uppercase;
   }
 
 
@@ -269,18 +277,30 @@
 
 
 
-  &__item-logo {
+  &__item-info {
     display: block;
     width: 100%;
     background-color: #f2eee8;
     position: absolute;
     bottom: 0;
-    height: 80px;
-    text-align: center;
-    padding-top: 25px;
-    font-size: 30px;
-    font-weight: 700;
+    // height: 80px;
+    padding: 20px 10px 5px;
 
+
+  }
+
+  &__item-info__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  &__item-logo {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
 
   &__items-btn {
@@ -291,19 +311,18 @@
   }
 
   &__btn {
+    text-align: center;
+    margin-left: 20px;
     padding: 20px 40px;
+    min-width: 250px;
     background-color: #F2EEE8;
-    // margin: 0 auto;
-    // background-color: #000;
 
 
 
     border-color: #43291B;
-    background-image: -webkit-linear-gradient(45deg, #43291B 50%, transparent 50%);
     background-image: linear-gradient(45deg, #43291B 50%, transparent 50%);
-    background-position: 100%;
+    background-position: 99%;
     background-size: 400%;
-    -webkit-transition: background 300ms ease-in-out;
     transition: background 300ms ease-in-out;
 
     &:hover {
@@ -329,8 +348,14 @@
     font-weight: 500;
     font-size: 20px;
 
-    path {
-      fill: currentColor !important;
+
+
+
+
+    svg:hover {
+      animation: rota 4s infinite normal;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
     }
   }
 
@@ -348,5 +373,62 @@
     margin-left: 20px;
   }
 }
+
+.form-resrv {
+  margin-top: 40px;
+  background-color: #F2EEE8;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 40px;
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+  }
+
+  &__input {
+    padding: 10px 15px;
+
+    width: 100%;
+    background-color: #fff;
+
+
+  }
+
+  select {
+    background-color: #fff;
+
+  }
+
+  &__selects {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  &__textarea {
+    grid-template-columns: 100%;
+  }
+
+  &__button {
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+
+    button {
+      background-color: #fff;
+    }
+  }
+}
+
+
+
+
+
 
 @import "media";

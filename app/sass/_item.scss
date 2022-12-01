@@ -2,10 +2,7 @@
   margin-bottom: 50px;
   // padding: 65px 0 45px;
 
-  &__container {
-    // padding: 0 160px;
-    // max-width: 1560px;
-  }
+
 
   &__item img {
     width: 100%;
@@ -58,7 +55,7 @@
           border-color: #43291B;
 
           &::before {
-            background-color: #43291B;
+            background-color: gold;
           }
         }
       }
@@ -92,6 +89,8 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 20px;
+
     }
 
 
@@ -121,7 +120,7 @@
   /* position: absolute; upd: 24.10.2016 */
   position: fixed;
   max-width: 600px;
-  height: auto;
+  max-height: 600px;
   z-index: 9999;
 }
 
@@ -140,13 +139,14 @@
   width: 100%;
   opacity: 0.5;
   z-index: 9990;
+
 }
 
 /* кнопка закрытия */
 #close-popup {
-  width: 30px;
-  height: 30px;
-  background: #FFFFFF;
+  // width: 30px;
+  // height: 30px;
+  background-color: #FFFFFF;
   border: 1px solid #AFAFAF;
   border-radius: 15px;
   cursor: pointer;
@@ -156,11 +156,14 @@
 }
 
 #close-popup i {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background: url(../images/icon/cross.png) no-repeat center center;
+
   background-size: 16px 16px;
   display: block;
+
+
 }
 
 @keyframes rota {
