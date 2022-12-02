@@ -3,13 +3,7 @@ $(function () {
     $(".modal-menu").toggle();
 
   });
-  $('.top-slider__inner').slick({
-    dots: true,
-    arrows: false,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 2000
-  });
+
 
   $('.categories__item-img').on("click", function (event) {
     var src = $(this).attr('src');

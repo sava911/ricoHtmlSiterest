@@ -10,8 +10,10 @@ function browsersync() {
   browserSync.init({
     server: {
       baseDir: "app/"
+
     },
     notofy: false
+
   });
 }
 function buildStyles() {

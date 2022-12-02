@@ -55,6 +55,9 @@ select {
   border: none;
   outline: none;
   font-family: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 path {
@@ -102,7 +105,7 @@ body {
 }
 
 .shimmer {
-  text-align: center;
+  // text-align: center;
   color: rgba(255, 255, 255, 0.1);
   background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
   background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));

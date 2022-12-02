@@ -3,6 +3,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
+
+  .header__menu-btn,
+  .menu {
+
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -148,6 +154,10 @@
 
   }
 
+  .banner__inner {
+    padding: 120px 10px 0;
+  }
+
   .header__inner {
     display: flex;
     justify-content: space-between;
@@ -257,7 +267,9 @@
 }
 
 @media (max-width: 361px) {
-  .header__menu-btn {
+
+  .header__menu-btn,
+  .cooperate {
     font-size: 10px;
   }
 

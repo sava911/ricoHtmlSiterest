@@ -57,6 +57,7 @@
 
 
   li {
+
     @extend %hover;
 
     &::before {
@@ -92,6 +93,7 @@
     height: 100vh;
 
     z-index: 8;
+
   }
 
   &__list {
@@ -100,39 +102,19 @@
     align-items: center;
     text-transform: uppercase;
     justify-content: space-around;
-    height: 500px;
+    height: 600px;
+    padding-bottom: 80px;
+    background-image: url(../images/icon/fish-fins-solid.svg);
+    background-position: bottom 10px center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    z-index: 9;
 
     li {
-      // display: inline-block;
-      transition: all 0.3s;
-      font-weight: 500;
 
-      font-size: 20px;
-      padding: 15px 0 14px;
-      position: relative;
-
-      &:hover {
-        color: #000;
-
-        &::before {
-          width: 100%;
-          right: auto;
-          left: 0;
-        }
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 0;
-        left: auto;
-        background-color: $ac-color;
-
-        height: 3px;
-        bottom: -2px;
-        transition: all 0.3s;
-        right: 0;
-      }
+      @extend %hover;
+      font-size: 12px;
+      font-family: "Avenir-Book";
     }
   }
 
@@ -154,9 +136,12 @@
   padding-top: 20px;
 
 
-  h1 {
+  h1,
+  h2 {
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+
   }
 
   h6,
@@ -361,6 +346,15 @@
     z-index: 1;
     width: 100%;
 
+    select {
+      background-image: url(../images/icon/arrow-selet.svg);
+      background-position: right 20px center;
+      background-repeat: no-repeat;
+      background-size: 15px;
+    }
+
+
+
   }
 
   &__input {
@@ -369,16 +363,26 @@
     width: 100%;
     background-color: #fff;
 
+    position: relative;
+
+
 
   }
 
   select {
     background-color: #fff;
 
+
+
+
   }
+
+
 
   &__selects {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
   }
 
   &__textarea {
@@ -390,8 +394,12 @@
     text-align: center;
     text-transform: uppercase;
 
+
+
     button {
       background-color: #fff;
+
+
     }
   }
 }
