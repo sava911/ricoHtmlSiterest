@@ -19,11 +19,23 @@
   }
 }
 
+@media (max-width: 900px) {
+  .header__menu-btn {
+    li~li {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 800px) {
 
 
   .menu {
     display: none;
+
+    &__bottom {
+      display: none;
+    }
 
     &__item-mobipone {
       display: block;
@@ -130,6 +142,22 @@
 }
 
 @media (max-width: 650px) {
+  body {
+
+    font-size: 13px;
+
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .vouchers-items {
+    grid-template-columns: repeat(1, 1fr);
+    //  grid-gap: 20px;
+  }
+
   .form-resrv__inputs {
     grid-template-columns: 100%;
     grid-column-gap: 20px;
@@ -141,12 +169,12 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .rest__items-btn {
+  .btn-wrapper {
     flex-direction: column;
   }
 
-  .rest__btn {
-    margin-bottom: 10px;
+  .btn {
+    // margin-bottom: 10px;
     margin-left: 0;
   }
 
@@ -228,9 +256,13 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 361px) {
+  .header__menu-btn {
+    font-size: 10px;
+  }
+
   .logo {
 
-    margin-left: 30px;
+    margin-left: 35px;
   }
 }

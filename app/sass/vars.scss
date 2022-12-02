@@ -1,7 +1,7 @@
-// $ac-color:#fe3e57;
+$ac-color:#43291B;
 // $df-color:#8d8d8d;
 // $title-color:#29282d;
-// $bg-color:#f6f6f6;
+$bg-color:#F2EEE8;
 
 // %Roboto-4 {
 //   font-family: Roboto;
@@ -23,11 +23,55 @@
 //   font-weight: 500;
 // }
 
-// %text {
-//   max-width: 700px;
-//   text-align: center;
-//   margin: 0 auto;
-//   margin-bottom: 40px;
-//   padding-top: 20px;
+%hover {
+  display: inline-block;
+  transition: all 0.3s;
+  position: relative;
 
-// }
+  &:hover {
+    color: #000;
+
+    &::before {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: auto;
+    background-color: $ac-color;
+
+    height: 3px;
+    bottom: -2px;
+    transition: all 0.3s;
+    right: 0;
+  }
+
+}
+
+%btn {
+  text-align: center;
+  margin-left: 20px;
+  padding: 20px 40px;
+  min-width: 250px;
+  background-color: $bg-color;
+  margin-top: 20px;
+
+
+
+  border-color: $ac-color;
+  background-image: linear-gradient(45deg, $ac-color 50%, transparent 50%);
+  background-position: 99%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+
+  &:hover {
+    background-position: 0;
+    color: #fff;
+  }
+
+}

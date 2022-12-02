@@ -26,13 +26,47 @@
   &__inner {
     font-weight: 500;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: 1fr, 100px, 1fr;
+    grid-template-columns: 1fr 100px 1fr;
+
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
 
   }
 
+  &__menu-btn {
+    display: flex;
+    justify-content: end;
+  }
 
+
+}
+
+
+
+.menu-btn {
+
+
+  li {
+    @extend %hover;
+
+    &::before {
+      height: 1px;
+    }
+  }
+
+  li~li {
+    margin-left: 20px;
+  }
 }
 
 .modal-menu {
@@ -92,7 +126,7 @@
         position: absolute;
         width: 0;
         left: auto;
-        background-color: #43291B;
+        background-color: $ac-color;
 
         height: 3px;
         bottom: -2px;
@@ -131,9 +165,11 @@
     font-size: 18px;
   }
 
-  p {
+  p,
+  b {
     padding-bottom: 20px;
   }
+
 }
 
 .logo {
@@ -146,82 +182,43 @@
   font-family: "Avenir-Roman";
 
 
-  li~li {
-    margin-left: 20px;
-  }
+  li {
 
-  &__item {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 5px;
 
-    &-mobipone {
-      display: none;
-    }
 
-    &:hover {
-      color: #000;
 
-      &::before {
-        width: 100%;
-        right: auto;
-        left: 0;
-      }
-    }
+    @extend %hover;
 
     &::before {
-      content: "";
-      position: absolute;
-      width: 0;
-      left: auto;
-      background-color: #43291B;
-
       height: 1px;
-      bottom: -2px;
-      transition: all 0.3s;
-      right: 0;
     }
-
   }
 
   &__bottom {
     text-align: center;
     margin-bottom: 40px;
+    text-transform: uppercase;
+
+    li~li {
+      margin-left: 20px;
+    }
   }
 
   &__bottom-list li {
-    display: inline-block;
-    transition: all 0.3s;
-    font-weight: 500;
 
-    font-size: 20px;
-    padding: 15px 0 14px;
-    position: relative;
 
-    &:hover {
-      color: #000;
+    font-size: 18px;
+    padding: 15px 0 3px;
 
-      &::before {
-        width: 100%;
-        right: auto;
-        left: 0;
-      }
-    }
+    @extend %hover;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 0;
-      left: auto;
-      background-color: #43291B;
-
-      height: 3px;
-      bottom: -2px;
-      transition: all 0.3s;
-      right: 0;
-    }
   }
+
+
 }
+
+
+
 
 
 .rest {
@@ -241,7 +238,7 @@
       0 8px 16px -8px rgba(0, 0, 0, 0.3),
       0 -6px 16px -6px rgba(0, 0, 0, 0.025);
     margin: 0 20px;
-    // background-color: #F2EEE8;
+    // background-color: $bg-color;
     position: relative;
 
     // transition: 1s;
@@ -303,42 +300,15 @@
     margin-bottom: 10px;
   }
 
-  &__items-btn {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-
-  }
-
-  &__btn {
-    text-align: center;
-    margin-left: 20px;
-    padding: 20px 40px;
-    min-width: 250px;
-    background-color: #F2EEE8;
 
 
 
-    border-color: #43291B;
-    background-image: linear-gradient(45deg, #43291B 50%, transparent 50%);
-    background-position: 99%;
-    background-size: 400%;
-    transition: background 300ms ease-in-out;
-
-    &:hover {
-      background-position: 0;
-      color: #fff;
-
-    }
-
-
-  }
 }
 
 .footer {
   &-bottom {
     padding: 20px 0;
-    background-color: #43291B;
+    background-color: $ac-color;
     color: #fff;
   }
 
@@ -376,7 +346,7 @@
 
 .form-resrv {
   margin-top: 40px;
-  background-color: #F2EEE8;
+  background-color: $bg-color;
   padding: 20px;
   text-align: left;
   margin-bottom: 40px;
@@ -426,6 +396,17 @@
   }
 }
 
+.btn {
+  @extend %btn;
+
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+
+}
 
 
 
