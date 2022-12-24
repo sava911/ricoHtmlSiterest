@@ -76,15 +76,14 @@
         <div class="description">
           <h2>ФОРМА ЗАПРОСА</h2>
         </div>
-        <form>
+        <form action="#">
           <div class="form-resrv__inputs">
-            <input class="form-resrv__input" type="text" name="name" required placeholder="Имя">
-            <input class="form-resrv__input" type="text" name="family" placeholder="Фамилия">
-            <input class="form-resrv__input" id="phone" type="text" name="phone" required placeholder="Телефон">
-
-            <input class="form-resrv__input" type="email" name="mail" placeholder="Your email address">
-            <input class="form-resrv__input" type="text" name="occasion" placeholder="Повод">
-            <select class="form-resrv__input" name="rest" required>
+            <input class="form-resrv__input" type="text" name="Имя" required placeholder="Имя">
+            <input class="form-resrv__input" type="text" name="Фамилия" placeholder="Фамилия">
+            <input class="form-resrv__input" type="number" name="Телефон" required placeholder="Телефон">
+            <input class="form-resrv__input" type="email" name="email" placeholder="Your email address">
+            <input class="form-resrv__input" type="text" name="Повод" placeholder="Повод">
+            <select class="form-resrv__input" name="day" required>
               <option selected disabled value=''>Пожалуйста, выберите ресторан</option>
               <option value="moscow">Rico moscow</option>
               <option value="dom">Rico dom</option>
@@ -127,19 +126,19 @@
               <option value="31">31</option>
             </select>
             <select class="form-resrv__input" name="month" required>
-              <option selected disabled value=''>Месяц</option>
-              <option value="Янв">Янв</option>
-              <option value="Фев">Фев</option>
-              <option value="Мар">Мар</option>
-              <option value="Апр">Апр</option>
-              <option value="Май">Май</option>
-              <option value="Июн">Июн</option>
-              <option value="Июл">Июл</option>
-              <option value="Авг">Авг</option>
-              <option value="Сен">Сен</option>
-              <option value="Окт">Окт</option>
-              <option value="Ноя">Ноя</option>
-              <option value="Дек">Дек</option>
+              <option selected disabled value=''>Month</option>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option>
             </select>
             <select class="form-resrv__input" name="time" required>
               <option selected disabled value=''>Time</option>
@@ -241,7 +240,6 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
